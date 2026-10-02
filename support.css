@@ -1,0 +1,119 @@
+.support-page {
+  max-width: 1132px;
+  margin: auto;
+  padding: 92px 24px 110px;
+}
+
+.support-hero { max-width: 780px; }
+
+.support-hero h1 {
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: .95;
+  letter-spacing: -.065em;
+}
+
+.support-hero > p:not(.eyebrow) {
+  max-width: 670px;
+  color: var(--muted);
+  font-size: 1.16rem;
+}
+
+.support-email {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 18px;
+  padding: 15px 22px;
+  border-radius: 14px;
+  background: var(--navy);
+  color: #fff;
+  text-decoration: none;
+}
+
+.support-email span {
+  font-size: .7rem;
+  color: #9eb3d2;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.support-email strong { font-size: 1rem; }
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 70px;
+}
+
+.support-card {
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+}
+
+.support-icon {
+  display: inline-block;
+  color: #0878de;
+  font-size: .73rem;
+  font-weight: 850;
+  letter-spacing: .1em;
+}
+
+.support-card h2 {
+  margin: 38px 0 10px;
+  font-size: 1.35rem;
+  letter-spacing: -.025em;
+}
+
+.support-card p {
+  margin: 0;
+  color: #5e6d83;
+}
+
+.contact-panel {
+  margin-top: 72px;
+  padding: 44px;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #071d46, #0b3271);
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 45px;
+  align-items: center;
+}
+
+.contact-panel .eyebrow { color: var(--cyan); }
+
+.contact-panel h2 {
+  margin: 0;
+  font-size: 2.25rem;
+  letter-spacing: -.045em;
+}
+
+.contact-panel p:not(.eyebrow) {
+  max-width: 680px;
+  color: #bdcce3;
+}
+
+.contact-panel > a {
+  padding: 13px 18px;
+  border-radius: 12px;
+  background: #fff;
+  color: var(--navy);
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 760px) {
+  .support-grid, .contact-panel { grid-template-columns: 1fr; }
+  .support-page { padding-top: 66px; }
+  .contact-panel > a { justify-self: start; }
+}
+
+@media (max-width: 520px) {
+  .support-card { padding: 26px; }
+  .contact-panel { padding: 30px; }
+}
